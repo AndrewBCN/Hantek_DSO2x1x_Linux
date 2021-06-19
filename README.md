@@ -6,7 +6,7 @@ This project provides the files and documentation to build and run from RAM a sm
 These inexpensive DSOs are powered by an AllWinner F1C200s SOC with 64MB of RAM, and Buildroot can be configured to build u-boot, the Linux kernel, the DTB file and a small root filesystem.
 The files output by Buildroot can then be uploaded directly to the DSO RAM using sunxi-fel/USB, and then Linux can be started which will provide a serial terminal connection and USB mass storage emulation through the USB OTG connector on the back of the DSO.
 
-In other words: there is absolutely no need to open the scope and this process does not void the warranty, since the NAND flash inside the DSO remains untouched
+In other words: there is absolutely no need to open the scope and this process does not void the warranty, since the NAND flash inside the DSO remains untouched.
 
 This project borrows many ideas and some code from three distinct GitHuB repositories and Buildroot projects for the same F1C200s SOC:
 
@@ -16,6 +16,7 @@ This project borrows many ideas and some code from three distinct GitHuB reposit
 
 3. builroot-tiny200 by AODZIP https://github.com/aodzip/buildroot-tiny200
 
-This project is a result of a thread on EEVBlog forum about hacking these Hantek DSOs
+This project is a result of a thread on EEVBlog forum about hacking these Hantek DSOs:
+
 https://www.eevblog.com/forum/testgear/hacking-the-dso2x1x/
 

@@ -1,4 +1,5 @@
 # Hantek_DSO2x1x_Linux
+![myimage-alt-tag](https://github.com/AndrewBCN/Hantek_DSO2x1x_Linux/blob/main/Pictures/hanteklinuxinside1a_small.jpg?raw=true)
 ## Linux for the Hantek DSO2000 series using Buildroot
 
 This project provides the files and documentation to build and run from RAM a small Linux distribution for the Hantek DSO2000 series (DSO2C10, DSO2C15, DSO2D10, DSO2D15) "value" DSOs.

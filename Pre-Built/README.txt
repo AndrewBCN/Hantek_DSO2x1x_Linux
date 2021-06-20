@@ -1,0 +1,1 @@
+The Pre-Built folder contains the already built u-boot, Linux kernel, dtb file and root filesystem to run Linux on a Hantek DSO2x1x.

@@ -20,3 +20,18 @@ This project is a result of a thread on EEVBlog forum about hacking these Hantek
 
 https://www.eevblog.com/forum/testgear/hacking-the-dso2x1x/
 
+## Pre-built files
+
+The Pre-Built folder contains the files required to boot Linux on a DSO2x1x, so the instructions for building below can be skipped.
+
+## Building
+
+We use Buildroot (www.buildroot.org) to build all the required packages to boot Linux on the Hantek DSO2x1x. The building process takes a couple of hours or more depending on the speed of your machine and Internet connection.
+
+## Loading Linux using sunxi-fel/USB
+
+### From a PC running Windows
+
+### From a PC running Linux
+
+## Opening a root shell and transferring files to/from the DSO2x1x

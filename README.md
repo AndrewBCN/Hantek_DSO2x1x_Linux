@@ -29,7 +29,7 @@ The Pre-Built folder contains the files required to boot Linux on a DSO2x1x, so 
 We use Buildroot (www.buildroot.org) to build all the required packages to boot Linux on the Hantek DSO2x1x. The building process takes a couple of hours or more depending on the speed of your machine and Internet connection.
 
 1. Git clone this project and cd into the directory just created.
-2. Download the Buildroot tarball (buildroot-2021.05.tar.gz) and extract it into this project directory. The recommended version is the one we tested: buildroot-2021.05. This will create a directory /buildroot-2021.05 and you should cd into it.
+2. Download the Buildroot tarball (wget https://buildroot.org/downloads/buildroot-2021.05.tar.gz) and extract it into this project directory. The recommended version is the one we tested: buildroot-2021.05. This will create a directory /buildroot-2021.05 and you should cd into it.
 3. Edit the .gitignore file; it should contain a single line with the character "\*" in it.
 4. Prepare the buildroot configuration file: make BR2_EXTERNAL=$PWD/../ hantek_dso2k_defconfig
 5. [optional] At this point you can if you want edit the default Buildroot configuration file and save your own version. Check the Buildroot manual for instructions.

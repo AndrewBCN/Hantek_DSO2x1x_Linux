@@ -29,21 +29,24 @@ The Pre-Built folder contains the files required to boot Linux on a DSO2x1x, so 
 We use Buildroot (www.buildroot.org) to build all the required packages to boot Linux on the Hantek DSO2x1x. The building process takes a couple of hours or more depending on the speed of your machine and Internet connection.
 
 1. Git clone this project and cd into the directory just created.
-2. Download the Buildroot tarball and extract it into this project directory. The recommended version is the one we tested: buildroot-2021.05. This will create a directory /buildroot and you should cd into it.
-3. Copy the files from this project into the corresponding folders in the buildroot directory: cp ../board ...
+2. Download the Buildroot tarball (buildroot-2021.05.tar.gz) and extract it into this project directory. The recommended version is the one we tested: buildroot-2021.05. This will create a directory /buildroot-2021.05 and you should cd into it.
+3. Edit the .gitignore file; it should contain a single line with the character "\*" in it.
 4. Prepare the buildroot configuration file: make hantek_dso2k_defconfig
 5. [optional] At this point you can if you want edit the default Buildroot configuration file and save your own version. Check the Buildroot manual for instructions.
 6. Start the build: make. You can make yourself a cup of tea and/or watch a movie, because the build process takes a couple of hours or more. There may be warnings and even errors during the build process, due to version mismatches between the gcc version installed on your machine and the original version used by developers of various packages, but these are usually trivial. See BR2ERRORS.txt for details.
 
 ## Loading Linux using sunxi-fel/USB
 
-Refer to this page for details: https://linux-sunxi.org/FEL/USBBoot
+Refer to this page for details: https://linux-sunxi.org/FEL/USBBoot  
 
 ### From a PC running Windows
 
 ### From a PC running Linux
 
 ## Opening a root shell and transferring files to/from the DSO2x1x
+If Linux correctly booted on the Hantek DSO (it take just a few seconds), then two USB devices will be detected on your Windows or Linux PC connected to the DSO:
+1. A serial port running at 115200 baud rate, with a root shell, where you should login as root (there is no password). If you are using Linux the serial device will show up as /dev/ttyACM0 or /dev/ttyACM1. You can open a terminal using screen or minicom.
+2. A small USB storage device with a FAT partition and the file README.txt. This is a tiny r/w space which you can use to exchange files directly between your PC and the DSO. Note that the files in this virtual USB drive will be lost once the DSO is turned off.
 
 ## Developers
 

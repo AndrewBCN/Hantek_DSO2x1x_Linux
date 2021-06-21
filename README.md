@@ -16,7 +16,7 @@ This project borrows many ideas and some code from three distinct GitHub reposit
 
 3. builroot-tiny200 by AODZIP https://github.com/aodzip/buildroot-tiny200
 
-This project is a result of a thread on EEVBlog forum about hacking these Hantek DSOs:
+This project is a result of a thread on EEVblog forum about hacking these Hantek DSOs:
 
 https://www.eevblog.com/forum/testgear/hacking-the-dso2x1x/
 
